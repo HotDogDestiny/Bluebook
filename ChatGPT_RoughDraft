@@ -1,0 +1,53 @@
+#include <stdio.h>
+
+// Function prototypes
+void startExam();
+void pauseExam();
+void endExam();
+
+int main() {
+    int choice;
+    do {
+        printf("Welcome to Bluebook - Essay Writing Proctor\n");
+        printf("1. Start Exam\n");
+        printf("2. Pause Exam\n");
+        printf("3. End Exam\n");
+        printf("4. Exit\n");
+        printf("Enter your choice: ");
+        scanf("%d", &choice);
+
+        switch (choice) {
+            case 1:
+                startExam();
+                break;
+            case 2:
+                pauseExam();
+                break;
+            case 3:
+                endExam();
+                break;
+            case 4:
+                printf("Exiting Bluebook. Goodbye!\n");
+                break;
+            default:
+                printf("Invalid choice. Please try again.\n");
+        }
+    } while (choice != 4);
+
+    return 0;
+}
+
+void startExam() {
+    // Add implementation for starting exam
+    printf("Starting exam...\n");
+}
+
+void pauseExam() {
+    // Add implementation for pausing exam
+    printf("Pausing exam...\n");
+}
+
+void endExam() {
+    // Add implementation for ending exam
+    printf("Ending exam...\n");
+}
